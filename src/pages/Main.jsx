@@ -60,7 +60,7 @@ function Main() {
       </div>
  
 
-<Kanban/>
+<MessageOpen/>
 
     
     </div>
