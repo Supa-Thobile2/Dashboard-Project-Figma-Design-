@@ -60,7 +60,7 @@ function Main() {
       </div>
  
 
-<Analytics/>
+<Kanban/>
 
     
     </div>
