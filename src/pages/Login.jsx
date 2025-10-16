@@ -43,7 +43,7 @@ function Login() {
                 <MobileHeader className='block md:hidden'/>
                 <div className='py-2  '>
                 
-                <div className='w-[100%] mx-aut0 md:p-19'>
+                <div className='w-[90%] mx-aut0 md:p-19'>
                  <h4 className="text-[18px]  Uppercase font-bold text-[#OF172A] ">
                   Sign In to your account
                 </h4>
