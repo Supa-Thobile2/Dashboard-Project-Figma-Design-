@@ -95,7 +95,7 @@ function Login() {
                           Google
                         </button>
                       </div>
-                      <div className="py-1 border-[1px] border-[#E2E8F0] outline-none">
+                      <div className="py-1">
                         <button className=" w-[100%] mx-auto bg-transparent gap-[12px] rounded-[12px] p-[8px] outline-none border   flex items-center justify-center font-semibold text-[14px] text-[#0F172A] font-600">
                          <FaFacebook className='font-[24px]' color='
                          blue' /> Facebook
