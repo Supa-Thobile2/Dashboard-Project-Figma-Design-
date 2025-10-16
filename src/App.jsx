@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Inbox, Login, Main, ResetPassword, SignUp, VerifyEmail, MainMail, MailPlatform, Chat, NewMessage} from './pages'
+import { Inbox, Login, Main, ResetPassword, SignUp, VerifyEmail, MainMail, MailPlatform, Chat, NewMessage, JobSearchMain} from './pages'
 
 
 
@@ -29,6 +29,10 @@ function App() {
     <Route path='/imbox' element={<MailPlatform/>}/>
     <Route path='/newmessage' element={<NewMessage/>}/>
     <Route path='/chat' element={<Chat/>}/>
+
+
+    {/* job section */}
+    <Route path='/job' element={<JobSearchMain/>}/>
  
     
     

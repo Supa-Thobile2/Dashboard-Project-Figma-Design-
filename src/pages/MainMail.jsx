@@ -2,6 +2,7 @@ import React from 'react'
 import { FaSearch } from 'react-icons/fa';
 import { FaArrowDownZA, FaBars, FaBell, FaUser } from 'react-icons/fa6';
 import MailPlatform from './MailPlatform';
+import OverView from './OverView'
 import MessageOpen from './MessageOpen';
 import NewMessage from './NewMessage';
 import Inbox from './Inbox';
@@ -101,7 +102,7 @@ function MainMail() {
       
   
  
-<Overview/>
+
  
      
      </div>

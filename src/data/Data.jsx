@@ -655,6 +655,24 @@ export const mailLinksData =[
         name:'Annette Black'
     },
  ]
+  export const jobLinksData = [
+    {
+        image: <FaUser/>,
+        link:'Darrel Steward'
+    },
+     {
+        image: <FaUser/>,
+        link:'Arlene McCoy'
+    },
+     {
+        image: <FaUser/>,
+    link:'Annette Black'
+     },
+      {
+        image: <FaUser/>,
+    link:'Annette Black'
+     },
+    ]
 
 
 

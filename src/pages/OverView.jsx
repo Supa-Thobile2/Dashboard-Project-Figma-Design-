@@ -8,15 +8,25 @@ import JobsCard from '../components/JobsCard'
 function OverView() {
   return (
     <div className='p-4 bg-[grey-200]'>
-        <MobileHeader/>
+
+      
+     
+        <div className='block md:flex justify-between items-center'>
+        <div className='flex flex-col'>
+
         <h3 className='text-[24px] font-bold text-[#0F172A] '>Welcome, Angela</h3>
         <p className='text-[12px] text-regular text-[#64748B]'>Monday, 05 Agust 2022</p>
-        <div className='flex items-center flex-col gap-2'>
+</div>
+        <div className=''>
             <button className='p-[8px] text-[14px] font-bold text-[#fff] bg-[#2563EB] rounded-[12px] w-full'>Add New Ad Jobs</button>
             <button className='p-[8px] text-[14px] font-bold text-[#0F172A] bg-[#fff] rounded-[12px] w-full'>Add New Ad Jobs</button>
               
         </div>
-        <div>
+        </div>
+
+
+
+        <div className='grid md:grid-cols-2 xl:grid-cols-4'>
                {analyticsData.map((item, index)=>{
             
                       return <AnalyticsCard 
@@ -31,7 +41,7 @@ function OverView() {
                     })}
             
         </div>
-        <div className='bg-[#fff]'>
+        <div className='bg-[#fff] border-4 border-red'>
             {jobData.map((item, index)=>{
 
                 return <JobsCard

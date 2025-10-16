@@ -20,6 +20,12 @@ export { default as Gant } from './Gant'
 export { default as NewMessage } from './NewMessage'
 export { default as Inbox } from './Inbox'
 export { default as Chat } from './Chat'
+export { default as OverView } from './OverView'
+export { default as JobSearchMain } from './JobSearchMain'
+export { default as JobList } from './JobList'
+export { default as SearchFilter } from './SearchFilter'
+export { default as JobSearch} from './JobSearch'
+
 
 
 
