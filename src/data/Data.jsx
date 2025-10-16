@@ -102,7 +102,7 @@ export const recentProjectsData =[
         
         numPer: 55,
         spanText: '8/15',
-        icon: FaShoppingCart
+        icon: <FaShoppingCart/>
 
        
 
@@ -115,7 +115,7 @@ export const recentProjectsData =[
         
         numPer: 30,
         spanText: '8/40',
-        icon: FaRegClock
+        icon: <FaRegClock/>
 
        
 
@@ -128,7 +128,7 @@ export const recentProjectsData =[
         
         numPer: 89,
         spanText: '40/55',
-        icon: FaDollarSign
+        icon:<FaDollarSign/>
 
        
 
@@ -289,24 +289,23 @@ export const doneData =[
         heading: 'Design Landing Page',
         subText:'Design',
         para:'Design landing page for Hiphonic pellentesque massa quam',
-        icon:'icon',
-        icon2:'icon',
+        icon: <FaCalendar/>,
+        icon2:<FaComment/>,
     },
        {
         heading: 'Competitor Analysis',
         subText:'Research',
         para:'Design landing page for Hiphonic pellentesque massa quam',
-        icon: FaCalendar,
-        icon2:FaComment,
+        icon: <FaCalendar/>,
+        icon2:<FaComment/>,
     },
 
     
        {
         heading: 'Set Up project and brief',
         subText:'Planning',
-     
-        icon:'icon',
-        icon2:'icon',
+        icon: <FaCalendar/>,
+        icon2:<FaComment/>,
     },
 
 ]
@@ -614,8 +613,48 @@ export const inboxData = [
 
 ]
 
+export const mailLinksData =[
+    {
+        title: 'Inbox',
+        span: 50,
+        icon: <FaUser/>
+    },
+    {
+        title:'Sent Mail',
+        icon:<FaUser/>
+    },
+    {
+        title:'Favorites',
+        icon:<FaUser/>
+    },
+    {
+        title:'Drafts',
+        icon:<FaUser/>
+    },
+    {
+        title:'Spam',
+        icon:<FaUser/>
+    },
+    {
+        title: 'Trash',
+        icon:<FaUser/>
+    }
 
-
+]
+ export const directMessageData = [
+    {
+        image: <FaUser/>,
+        name:'Darrel Steward'
+    },
+     {
+        image: <FaUser/>,
+        name:'Arlene McCoy'
+    },
+     {
+        image: <FaUser/>,
+        name:'Annette Black'
+    },
+ ]
 
 
 

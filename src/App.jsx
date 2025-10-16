@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Inbox, Login, Main, ResetPassword, SignUp, VerifyEmail } from './pages'
-import MainMail from './pages/MainMail'
+import { Inbox, Login, Main, ResetPassword, SignUp, VerifyEmail, MainMail, MailPlatform, Chat, NewMessage} from './pages'
+
 
 
 
@@ -23,9 +23,14 @@ function App() {
 
     {/* Main Section sales */}
     <Route path='/main' element={<Main/>}/>
-    <Route path='/mail' element={<MainMail/>}/>
 
-    <Route path='/inbox' element={<Inbox/>}/>
+    {/* Mail platform */}
+    <Route path='/mail' element={<MainMail/>}/>
+    <Route path='/imbox' element={<MailPlatform/>}/>
+    <Route path='/newmessage' element={<NewMessage/>}/>
+    <Route path='/chat' element={<Chat/>}/>
+ 
+    
     
    </Routes>
   

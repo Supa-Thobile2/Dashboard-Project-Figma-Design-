@@ -60,7 +60,7 @@ function Main() {
       </div>
  
 
-<MessageOpen/>
+<MailPlatform/>
 
     
     </div>

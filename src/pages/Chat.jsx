@@ -12,7 +12,7 @@ function Chat() {
             </div>
         </div>
         <div className='flex items-center justify-between py-2'>
-            <div className='h-20 w-20 border rounded-full'>
+            <div className='h-10 w-10 border rounded-full flex items-center justify-center '>
                 Image
             </div>
             <div>
@@ -33,7 +33,7 @@ function Chat() {
             <h5 className='text-md font-bold'>Translate Message</h5>
             <span className='py-2'>Dec 27 2001 08:00 AM</span>
             <p>Hi! Good morning </p>
-            <p>lorem</p>
+            <p>Today we will have a meeting with a client at 10 am. Prepare your selves guys okay! Edward will present it At neque, luctus dictum sit lobortis. Urna pharetra enim, nec et, ridiculus fringilla faucibus id aliquam...</p>
             <p>Kind Regards, Darrel S.</p>
 
         </div>
