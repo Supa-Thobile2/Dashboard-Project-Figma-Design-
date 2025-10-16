@@ -25,7 +25,7 @@ function Main() {
     {/* Right section of Main */}
     <div className='w-[100%]  mx-auto md:w-5/6  min-h-[100vh] '>
     {/* navbar section */}
-      <div className="sticky inset-0 top-0 w-full mx-auto z-500 ">
+      <div className="sticky inset-0 top-0 w-full mx-auto z-500 bg-white">
        <div className='flex items-center justify-between'>
 
        
