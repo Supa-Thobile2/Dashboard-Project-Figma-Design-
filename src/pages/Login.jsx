@@ -51,7 +51,7 @@ function Login() {
                   <form className="w-[100%] mx-auto  ">
                   
                   
-                     <div className="flex items-center justify-centre border-[2px] border-[#E2E8F0] py-[12px] px-[12px] gap-2 my-[8px] rounded-[12px] text-left w-[100%] mx-auto">
+                     <div className="flex items-center justify-centre border-[2px] border-[#E2E8F0] py-[12px] px-[12px] gap-2 my-[4px] rounded-[12px] text-left w-[100%] mx-auto">
                       {/* img */}
                       <FaRegEnvelope className='font-[20px]'/>
                       <input type="email" placeholder="Email" className='text-[14px] text-regular text-[ #94A3B8] outline-none w-full' />
@@ -59,7 +59,7 @@ function Login() {
       
                     
       
-                    <div className="flex items-center justify-center border-[2px] border-[#E2E8F0] py-[12px] px-[8px] gap-2 rounded-[12px] text-left w-[100%] mx-auto">
+                    <div className="flex items-center justify-center border-[2px] border-[#E2E8F0] py-[12px] px-[4px] gap-2 rounded-[12px] text-left w-[100%] mx-auto">
                       {/* img */}
                       <FaLock    className='font-[20px]'/>
                       <input type="password" placeholder="Password" className='text-[14px] outline-none w-full '/>
