@@ -43,8 +43,8 @@ function Login() {
                 <MobileHeader className='block md:hidden'/>
                 <div className='py-2  '>
                 
-                <div className='w-[95%] mx-auto p-4 md:p-19'>
-                 <h4 className="text-[22px]  Uppercase font-bold text-[#OF172A] ">
+                <div className='w-[95%] mx-auto p-2 md:p-19'>
+                 <h4 className="text-[18px]  Uppercase font-bold text-[#OF172A] ">
                   Sign In to your account
                 </h4>
                 <p>Welcome back! please enter your detail</p>
@@ -53,7 +53,7 @@ function Login() {
                   
                      <div className="flex items-center justify-centre border-[2px] border-[#E2E8F0] py-[12px] px-[12px] gap-2 my-[12px] rounded-[12px] text-left w-[100%] mx-auto">
                       {/* img */}
-                      <FaRegEnvelope className='font-[24px]'/>
+                      <FaRegEnvelope className='font-[20px]'/>
                       <input type="email" placeholder="Email" className='text-[14px] text-regular text-[ #94A3B8] outline-none w-full' />
                     </div>
       
@@ -61,13 +61,13 @@ function Login() {
       
                     <div className="flex items-center justify-center border-[2px] border-[#E2E8F0] py-[12px] px-[12px] gap-2 rounded-[12px] text-left w-[100%] mx-auto">
                       {/* img */}
-                      <FaLock    className='font-[24px]'/>
+                      <FaLock    className='font-[20px]'/>
                       <input type="password" placeholder="Password" className='text-[14px] outline-none w-full '/>
                       {/* img */}
-                      <FaRegEyeSlash   className='font-[44px]'/>
+                      <FaRegEyeSlash   className='font-[40px]'/>
                     </div>
                     <div className='flex justify-between items-center'>
-                        <div className='flex  justify-center gap-2 py-2'>
+                        <div className='flex  justify-center gap-2 py-1'>
                       <input type='checkbox' className='block h-[20px] w-[20px] border-6'/>
                       <p className='text-[12px] font-regular text-[#64748B] '>Remember me</p>
                     </div>
@@ -87,9 +87,9 @@ function Login() {
                       Sign In
                     </button>
                      </Link>
-                    <span className="block text-center font-regular text-[12px] text-[#64748B] py-2">Or Sign Up with</span>
+                    <span className="block text-center font-regular text-[8px] text-[#64748B] py-1">Or Sign Up with</span>
                     <div className="py-1 md:flex items-center justify-center gap-2">
-                      <div className="py-2 border-[1px] border-[#E2E8F0] outline-none ">
+                      <div className="py-1 border-[1px] border-[#E2E8F0] outline-none ">
                         <button className="flex items-center justify-center gap-[12px] mx-auto rounded-[12px] outline-none p-[8px] border w-[100%] font-semibold text-[14px] text-[#0F172A] font-600">
                           <FaGooglePlusG  className='font-[24px]'/>
                           Google
@@ -108,7 +108,7 @@ function Login() {
                 </div>
       
                 </div>
-                                    <p className='text-center text-regular font-400 text-[14px] '>Don't have an account? <Link to='/signup'>Sign Up</Link></p>
+                                    <p className='text-center text-regular font-400 text-[12px] '>Don't have an account? <Link to='/signup'>Sign Up</Link></p>
               </div>
 
             </div>
