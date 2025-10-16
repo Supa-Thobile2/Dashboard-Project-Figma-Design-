@@ -6,7 +6,7 @@ import MailPlatformCard from '../components/MailPlatformCard'
 
 function MailPlatform() {
   return (
-    <div className=' w-full'>
+    <div className=' w-[95%] mx-auto'>
       
         <div className=' '>
             <h3 className='text-[22px] font-bold'>Inbox</h3>
