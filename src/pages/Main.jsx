@@ -25,7 +25,7 @@ function Main() {
     {/* Right section of Main */}
     <div className='w-[100%]  mx-auto md:w-5/6 border-4 min-h-[100vh]  border-6 flex-grow'>
     {/* navbar section */}
-      <div className="sticky inset-0 top-0 w-full mx-auto z-500 p-4">
+      <div className="sticky inset-0 top-0 w-full mx-auto z-500 p-2">
        <div className='flex items-center justify-between'>
 
        
@@ -34,7 +34,7 @@ function Main() {
           <h3 className='text-[1.6rem] font-bold '>Overview</h3>
           <p className="text-[.9rem] font-regular">Detailed Information about your store</p>
         </div>
-        <div className='hidden md:flex items-center justify-between gap-4 space-x-4'>
+        <div className='hidden md:flex items-center justify-between gap-4 space-x-2'>
           <div className="border flex items-center  p-[.5rem] rounded-[0.9rem]">
             <FaSearch/>
             <input type="text" name="search" id="search" className="w-full outline-none"/>

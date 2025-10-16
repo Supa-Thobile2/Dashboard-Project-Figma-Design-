@@ -8,8 +8,8 @@ function MailPlatform() {
   return (
     <div className=' w-full'>
       
-        <div className='space-y-4 p-4'>
-            <h3 className='text-[24px] font-bold'>Inbox</h3>
+        <div className='space-y-2 p-2'>
+            <h3 className='text-[22px] font-bold'>Inbox</h3>
           <div className='bg-[#F1F5F9]'>
             {mailPlatform.map((item, index)=>{
                 return <MailPlatformCard 
