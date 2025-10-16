@@ -39,7 +39,7 @@ function Login() {
               {/* <div>
                   
               </div> */}
-              <div className="w-[95%]  mx-auto flex   flex-col  md:justify-center">
+              <div className="w-[100%]  mx-auto flex   flex-col  md:justify-center">
                 <MobileHeader className='block md:hidden'/>
                 <div className='py-2  '>
                 
