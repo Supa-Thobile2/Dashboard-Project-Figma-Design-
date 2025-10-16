@@ -89,7 +89,7 @@ function Login() {
                      </Link>
                     <span className="block text-center font-regular text-[8px] text-[#64748B] py-1">Or Sign Up with</span>
                     <div className="py-1 md:flex items-center justify-center gap-2">
-                      <div className="py-1 border-[1px] border-[#E2E8F0] outline-none ">
+                      <div className="py-1  ">
                         <button className="flex items-center justify-center gap-[12px] mx-auto rounded-[12px] outline-none p-[8px] border w-[100%] font-semibold text-[14px] text-[#0F172A] font-600">
                           <FaGooglePlusG  className='font-[24px]'/>
                           Google
