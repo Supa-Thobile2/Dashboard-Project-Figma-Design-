@@ -26,21 +26,21 @@ function Main() {
     <div className='w-[100%]  mx-auto md:w-5/6  min-h-[100vh] '>
     {/* navbar section */}
       <div className="sticky inset-0 top-0 w-full mx-auto z-500 bg-white">
-       <div className='flex items-center justify-between'>
+       <div className='flex items-center justify-between p-2'>
 
        
        
         <div>
-          <h3 className='text-[1.6rem] font-bold '>Overview</h3>
-          <p className="text-[.9rem] font-regular">Detailed Information about your store</p>
+          <h3 className='text-[1rem] font-bold '>Overview</h3>
+          <p className="text-[.6rem] font-regular">Detailed Information about your store</p>
         </div>
         <div className='hidden md:flex items-center justify-between gap-4 space-x-2'>
-          <div className="border flex items-center  p-[.5rem] rounded-[0.9rem]">
+          <div className="border flex items-center  p-[.8rem] rounded-[0.9rem]">
             <FaSearch/>
             <input type="text" name="search" id="search" className="w-full outline-none"/>
 
           </div>
-          <div className='flex items-center justify-between gap-4'>
+          <div className='flex items-center justify-between gap-2'>
             <div>
               <FaBell/>
             </div>
