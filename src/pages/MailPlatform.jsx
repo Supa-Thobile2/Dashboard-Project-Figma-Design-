@@ -26,9 +26,11 @@ function MailPlatform() {
             
           </div>
           <div>
-          <p className='text-[14px] font-semibold font-600 text-center'>Show 1 of 10 Data</p>
+            <Inbox/>
+        
         </div>
         </div>
+
     </div>
     
   )

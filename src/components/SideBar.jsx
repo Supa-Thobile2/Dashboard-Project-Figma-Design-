@@ -1,9 +1,9 @@
 import React from 'react'
-import { MobileHeader } from '../components'
+import { MobileHeader } from '.'
 import { FaBoltLightning } from 'react-icons/fa6'
 import { bottomLinks, MenuLinks } from '../data/Data'
 
-function SideBar() {
+function SideBar(props) {
   return (
     <div className='hidden md:min-h-[100vh] md:flex flex-col border p-6'>
 

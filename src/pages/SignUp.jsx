@@ -13,7 +13,7 @@ function SignUp() {
        <div className='w-[100%] h-[100%]  '>
         
          <div className="flex justify-center w-[100%] h-[100vh] ">
-        <div className="hidden md:block bg-blue-600 w-[100%] p-6  ">
+        <div className="hidden md:block bg-blue-600 w-[100%] h-[100vh] p-6  ">
                   <div className='flex items-center gap-2'>
                  
                             <div className='bg-white p-2  rounded'>
@@ -39,15 +39,15 @@ function SignUp() {
            {/* <div>
                
            </div> */}
-           <div className="w-[100%] flex   flex-col  md:justify-center md:p-14">
+           <div className="w-[100%] h-[100vh] flex   flex-col  md:justify-center md:p-8">
              <MobileHeader className=''/>
-             <div className='p-2 space-y-2'>
+             <div className=' space-y-1 '>        
              
-             <div className='w-[90%] mx-auto md:px-6 py-2'>
-              <h3 className="text-[22px]  Uppercase font-bold text-[#OF172A]md:text-[24px]">
+             <div className='w-[90%] mx-auto md:px-6 py-1'>
+              <h3 className="text-[16px]  Uppercase font-bold text-[#OF172A] md:text-[18px]">
                Sign Up to your account
              </h3>
-             <p className='text-[16px] py-2 font-400 font-regular text-[#64748B]'>Welcome back! please enter your detail</p>
+             <p className='text-[16px] py-1font-400 font-regular text-[#64748B]'>Welcome back! please enter your detail</p>
              
                <form className="w-[100%] mx-auto space-y-2 md:space-y-3 ">
                 <div className="flex items-center justify-centre border-[2px] border-[#E2E8F0] py-[12px] px-[12px] gap-2  rounded-[12px] text-left w-[100%] mx-auto">
@@ -85,7 +85,7 @@ function SignUp() {
                  <button className="block w-[100%] mx-auto bg-blue-600 rounded-[12px] p-[10px] font-bold text-[16px] text-[#ffffff]">
                    Sign In
                  </button>
-                 <span className="block text-center font-regular text-[12px] text-[#64748B] py-2">Or Sign Up with</span>
+                 <span className="block text-center font-regular text-[14x] text-[#64748B] py-2">Or Sign Up with</span>
                  <div className=" space-y-1 md:flex items-center justify-center gap-4 ">
                    <div className=" border-[1px] border-[#E2E8F0] outline-none ">
                      <button className="flex items-center justify-center gap-[12px] mx-auto rounded-[12px] outline-none p-[10px] border w-[100%] font-semibold text-[14px] text-[#0F172A] font-600">

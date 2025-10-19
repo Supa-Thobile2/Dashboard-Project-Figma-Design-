@@ -8,39 +8,39 @@ import Message from "./Message";
 
 function RecentProjects() {
   return (
-    <div className=" min-h-full flex justify-center items-center flex-col  bg-[#F8FAFC]">
+    <div className=" min-h-full flex  flex-col  bg-[#F8FAFC]">
 
-      {/* recent project heading */}
+ 
       
-          <MobileHeader/>
-      
-      
-        {/* main section */}
-      <div className="py-4 my-2  w-[90%] mx-auto">
+  
         {/* recent section leading section */}
-        <div className=" border-[1px] rounded-xl  w-[343px] h-[564px] mx-auto  bg-white">
+        <div className=" border-[1px] rounded-xl  mx-auto  bg-white">
         {/* leading head section */}
-          <div className="flex justify-between items-center  mx-auto mb-8">
-            <h5 className="text-2xl font-bold  ">Recent Project</h5>
+          <div className="flex  items-center  mx-auto mb-8">
+            <h5 className="text-md font-bold  ">Recent Project</h5>
             <p>...</p>
           </div>
 
           {/* recent section cards */}
+          <div className="block md:flex items-center justify-between md:w-[668px] md:h-[192px] mx-auto">
+
+
 
           {recentProjectsData.map((item, index)=>{
 console.log(item)
 
-                   return <div key={index} className="w-[311px] h-[134px] mx-auto bg-[#F8FAFC] my-3 py-4 px-4 border-[1px] rounded-xl bg-gray">
-            <h4 className="text-xl font-bold mb-1">{item.title}</h4>
-            <div className="flex justify-between items-center pb-2 my-2">
-              <p  className="text-base">{item.text}</p>
-              <p>{item.numPer}</p>
+                   return <div key={index} className="p-2 mx-auto md:w-[205px] md:h-[148px] bg-[#F8FAFC]  border-[1px] rounded-xl bg-gray">
+            <h4 className="text-[16px] font-bold ">{item.title}</h4>
+            <div className="flex justify-between items-center ">
+              <p  className="text-[12px] font-regular font-400 text-[ #64748B]
+">{item.text}</p>
+              <p className='text-[12px] text-semibold'>{item.numPer}</p>
             </div>
             <input type="range" />
-            <div className="flex justify-between items-center py-2">
+            <div className="flex justify-between items-center">
               <div>
                 <input type="checkbox" />
-                <span className="font-bold ml-1">{item.spanText}</span>
+                <span className="text-[12px] font-medium font-medium ">{item.spanText}</span>
               </div>
               <div>{item.image}</div>
             </div>
@@ -51,13 +51,15 @@ console.log(item)
 
           })}
 
+                    </div>
+
          
           
         </div>
 
 
 
-        <div className=" my-4 border-4 rounded-xl w-[343px] h-[293px] mx-auto ">
+        {/* <div className=" my-4 border-4 rounded-xl mx-auto ">
           <div className="flex justify-between items-center p-4">
             <p   className="text-[16px] font-bold ">Activity</p>
             <div>
@@ -71,16 +73,16 @@ console.log(item)
             </div>
           </div>
           <div className="border-2 p-8 my-6">Graph</div>
-        </div>
+        </div> */}
 
-        <div className=" border rounded-xl w-[343px] h-[293px] mx-auto">
+        {/* <div className=" border rounded-xl mx-auto">
           <div className="flex justify-between items-center ">
             <p className="font-bold">Task Summary</p>
 
             <p>...</p>
           </div>
-          <div className="w-[343px] h-[293px] mx-auto border-2 p-2 flex justify-center items-center flex-col">
-            <div className="border flex justify-center items-center w-[343px] h-[293px] gap-2 p-10">
+          <div className="w-full mx-auto border-8  block md:flex justify-center items-center">
+            <div className="grid grid-cols-3 md:grid-cols-2">
               {TaskSummary.map((item, index)=>{
                 return <TaskObject 
                 key={index}
@@ -91,6 +93,8 @@ console.log(item)
                 />
               })}
             </div>
+
+            <div>
             <p className="py-2">On-time completion rate</p>
             <div className="flex justify-between items-center">
               <div className="flex justify-evenly items-center ">
@@ -102,23 +106,28 @@ console.log(item)
                 </div>
               </div>
             </div>
+            </div>
+
+
           </div>
-        </div>
+        </div> */}
+
+<div className='block md:flex md:w-[698px] h-[192px]'>
 
 
-        <div className=" my-4 border w-[343px] h-[293px] mx-auto rounded-xl">
-          <div className="flex justify-between items-center">
+        <div className="md:w-[332px] md:h-[340px] mx-auto  border mx-auto rounded-xl">
+          <div className="flex justify-center items-center">
             <div>November 21</div>
             <div>Arrows</div>
           </div>
-          <div className="p-4 m-6 border"></div>
+          <div className="border"></div>
         </div>
 
 
         {/* Message section */}
-        <div className=" my-4 border w-[343px] h-[293px]  mx-auto rounded-xl">
-          <h5 className="text-2xl  font-bold">Message</h5>
-          <div className="py-2 text-center w-[85%] mx-auto">
+        <div className="md:w-[334px] md:h-[340px] mx-auto m border  mx-auto rounded-xl">
+          <h5 className="text-[16px]  font-bold">Message</h5>
+          <div className="py-2 text-center mx-auto">
             <Message/>
             {/* {MessageData.map((item,index)=>{
               console.log(item)
@@ -147,10 +156,11 @@ console.log(item)
           </div>
         </div>
 
+      </div>
 
-        {/* task section */}
+ {/* task section */}
         
-        <div className=" mt-4 border w-[343px] h-[293px] mx-auto rounded-xl">
+        <div className="md:w-[668px] mt-4 border mx-auto rounded-xl">
           {/* sectionhead */}
           <div className="flex justify-between items-center">
             <div>
@@ -174,8 +184,9 @@ console.log(item)
 
          })}
         </div>
+       
       </div>
-    </div>
+    
   );
 }
 

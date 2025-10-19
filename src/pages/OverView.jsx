@@ -7,26 +7,26 @@ import JobsCard from '../components/JobsCard'
 
 function OverView() {
   return (
-    <div className='p-4 bg-[grey-200]'>
+    <div className='p-4 space-y-2 md:p-8 md:space-y-4 bg-[grey-200]'>
 
       
      
         <div className='block md:flex justify-between items-center'>
         <div className='flex flex-col'>
 
-        <h3 className='text-[24px] font-bold text-[#0F172A] '>Welcome, Angela</h3>
-        <p className='text-[12px] text-regular text-[#64748B]'>Monday, 05 Agust 2022</p>
+        <h3 className='text-[18px] font-bold text-[#0F172A] '>Welcome, Angela</h3>
+        <p className='text-[8px] text-regular text-[#64748B]'>Monday, 05 Agust 2022</p>
 </div>
-        <div className=''>
-            <button className='p-[8px] text-[14px] font-bold text-[#fff] bg-[#2563EB] rounded-[12px] w-full'>Add New Ad Jobs</button>
-            <button className='p-[8px] text-[14px] font-bold text-[#0F172A] bg-[#fff] rounded-[12px] w-full'>Add New Ad Jobs</button>
+        <div className='flex items-center justify-center gapsp-2'>
+            <button className='p-[8px] text-[12px] font-bold text-[#fff] bg-[#2563EB] rounded-[12px] w-full'>Add New Ad Jobs</button>
+            <button className='p-[8px] text-[12px] font-bold text-[#0F172A] bg-[#fff] rounded-[12px] w-full'>Add New Ad Jobs</button>
               
         </div>
         </div>
 
 
 
-        <div className='grid md:grid-cols-2 xl:grid-cols-4'>
+        <div className='grid md:grid-cols-2 gap-0'>
                {analyticsData.map((item, index)=>{
             
                       return <AnalyticsCard 
@@ -41,6 +41,18 @@ function OverView() {
                     })}
             
         </div>
+        <div className='flex items-center justify-between'>
+          <div>
+
+           <h5>Total Impressions</h5>
+
+          </div>
+          <div>
+                          <h5>Statistics
+                            
+                          </h5>
+          </div>
+        </div>
         <div className='bg-[#fff] border-4 border-red'>
             {jobData.map((item, index)=>{
 
@@ -53,6 +65,7 @@ function OverView() {
                 />
             })}
         </div>
+
     </div>
   )
 }

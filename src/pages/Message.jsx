@@ -4,7 +4,7 @@ import MessageCard from '../components/MessageCard'
 
 function Message() {
   return (
-    <div className='w-[100px] h-full border-4 mx-auto flex justify-center items-center p-4 flex-col' >
+    <div className='w-[90%]  border-4 mx-auto flex justify-center items-center p-4 flex-col' >
 
       {MessageData.map((item, index)=>{
         console.log(item)

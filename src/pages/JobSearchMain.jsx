@@ -120,7 +120,7 @@ function JobSearchMain() {
     
           </div>
           <div className=''>
-                   <JobSearch/>
+                   <JobList/>
          </div>
    
          

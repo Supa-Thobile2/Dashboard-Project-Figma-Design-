@@ -1,19 +1,12 @@
 import React from 'react'
-import { FaSearch } from 'react-icons/fa';
-import { FaArrowDownZA, FaBars, FaBell, FaUser } from 'react-icons/fa6';
-import MailPlatform from './MailPlatform';
-import OverView from './OverView'
-import MessageOpen from './MessageOpen';
-import NewMessage from './NewMessage';
-import Inbox from './Inbox';
-import Chat from './Chat';
-import SearchFilter from './SearchFilter';
-import { MobileHeader } from '../components';
-import { FaBoltLightning } from 'react-icons/fa6'
-import { mailLinksData, directMessageData } from '../data/Data'
+import Chat from './Chat'
+import MailPlatformCard from '../components/MailPlatformCard'
+import { directMessageData, mailLinksData, mailPlatform } from '../data/Data'
+import { FaArrowDownZA, FaBars, FaBell, FaBoltLightning, FaUser } from 'react-icons/fa6'
+import { FaSearch } from 'react-icons/fa'
 
-function MainMail() {
- return (
+function MainChat() {
+return (
      <div className="min-h-[100vh] flex">
      {/* Sidebar section */}
      <div className=" hidden md:flex items-center flex-col  md:w-1/6 min-h-[100vh] xl:w-1/6 ">
@@ -100,7 +93,7 @@ function MainMail() {
        </div>
 
       
-  <Inbox/>
+  <Chat/>
  
 
  
@@ -113,15 +106,7 @@ function MainMail() {
   
   
   
-  );
+  )
 }
 
-export default MainMail
-
-
-
-
-
-
-
-
+export default MainChat

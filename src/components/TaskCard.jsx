@@ -6,7 +6,7 @@ function TaskCard(props) {
           
           
          
-          <div className="w-[343px] h-[128px] mx-auto flex justify-between items-center p-4  my-4 border rounded-xl">
+          <div className="mx-auto flex justify-between items-center p-4  my-4 border rounded-xl">
             <div>
               <input type="checkbox" />
               <span>${props.para}</span>

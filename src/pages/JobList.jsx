@@ -11,7 +11,7 @@ function JobList() {
     <div className='w-[100%]  mx-auto'>
       
         <div className='space-y-2'>
-        <div className='p-4 bg-[white] w-[90%] mx-auto'>
+        <div className='p-4 bg-[white] w-[90%] md:w-[688px] mx-auto'>
 
         
         <div className='flex items-center justify-center gap-2 border-b-[1px] text-sm p-4'>
@@ -30,7 +30,7 @@ function JobList() {
         </div>
     
         </div>
-        <div className='flex items-center justify-between flex-wrap gap-2  w-[90%] mx-auto'>
+        <div className='grid md:grid-cols-2 gap-2'>
             {jobListData.map((item, index)=>{
                 return <JobListCard
                 key={index}

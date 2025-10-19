@@ -2,7 +2,7 @@ import React from 'react'
 
 function SearchCard(props) {
   return (
-    <div className='w-[100%] mx-auto md:w-[600px] flex items-center justify-between border p-2 rounded-[12px]'>
+    <div className='w-[100%] mx-auto md:w-[686px] flex items-center justify-between border p-2 rounded-[12px]'>
         
         <div className=''>ico</div>
 

@@ -3,7 +3,7 @@ import { AnalyticsCard, MobileHeader, SalesCard} from "../components";
 import { analyticsData, bestSellData, overViewData, productsData, transactionHistoryData } from "../data/Data";
 import BestCard from "../components/BestCard";
 import TransactionCard from "../components/TransactionCard";
-import SideBar from "./SideBar";
+import SideBar from "../components/SideBar";
 import RecentProjects from "./RecentProjects";
 import { FaSearch } from "react-icons/fa";
 import { FaArrowDownZA, FaBars, FaBell, FaEllipsis, FaRegCalendar, FaUser } from "react-icons/fa6";
@@ -13,11 +13,13 @@ import KanbanAdd from "./KanbanAdd";
 import MailPlatform from "./MailPlatform";
 import List from "./List";
 import Goals from "./Goals";
-import Gant from "./Gant";
+import Gant from "./Gant"; 
+import OverView from "./OverView";
 
-function Main() {
+
+function Dashboard() {
   return (
-    <div className="min-h-[100vh] flex">
+    <div className="min-h-[100vh] flex bg-primary-600">
     {/* Sidebar section */}
     <div className="  md:w-1/6 min-h-[100vh] xl:w-1/6 ">
       <SideBar/>
@@ -35,8 +37,8 @@ function Main() {
           <p className="text-[.6rem] font-regular">Detailed Information about your store</p>
         </div>
         <div className='hidden md:flex items-center justify-between gap-4 space-x-2'>
-          <div className="border flex items-center  p-[.8rem] rounded-[0.9rem]">
-            <FaSearch/>
+          <div className="border flex items-center  p-[8px] rounded-[0.9rem]">
+            <FaSearch className="text-[12px]"/>
             <input type="text" name="search" id="search" className="w-full outline-none"/>
 
           </div>
@@ -59,8 +61,8 @@ function Main() {
 
       </div>
  
+ <RecentProjects/> 
 
-<MailPlatform/>
 
     
     </div>
@@ -69,4 +71,4 @@ function Main() {
   );
 }
 
-export default Main
+export default Dashboard

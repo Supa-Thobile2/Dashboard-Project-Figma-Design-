@@ -142,3 +142,74 @@
 
         </div>
     </div>
+
+
+
+
+
+
+    theme
+
+    
+@theme {
+
+/* 
+  h1: 24px;
+  h2: 
+  h3
+  h4
+  h5
+  h6 */
+  /* font-family */
+  /* --font-inter: Inter, sans-serif; */
+
+  /* background color */
+
+  /* --bg-primary-600: blue; */
+
+  /* background-color */
+/* --border: 1px;
+--border-color: grey; */
+
+
+/* Text-color */
+
+  /* --color-white: #fff; */
+
+  /* handling different screen sizes */
+
+  /* --breakpoint-sm: 30rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-xl: 64rem; */
+/* 
+
+  Text-size */
+/* 
+  --text-xs: 8px;
+  --text-sm: 10px;
+  --text-base: 12px;
+  --text-lg: 14px;
+  --text-xl: 16px; */
+  
+/* flex layout */
+/* 
+.md-grid{
+  @apply grid grid-cols-2 gap-2 
+
+} */
+/* 
+.flex-center{
+  @apply flex justify-center items gap-2
+} */
+/* .flex-center-col{
+  @apply flex justify-center items flex-col gap-2
+} */
+
+
+/* .flex-between{
+  @apply flex items-center justify-between
+} */
+
+/* .flex-between-col{
+  @apply flex items-center justify-between */
+}
