@@ -2,8 +2,8 @@ import React from 'react'
 
 function MessageCard(props) {
   return (
-    <div className="w-full flex justify-between items-center border-t-1 border-b-1 mx-auto border-[1px] gap-2">
-              <div className="rounded-full border h-[48px] w-[48px] flex justify-center items-center flex-col m-2">
+    <div className="w-full flex justify-between items-center border-t-1 border-b-1 mx-auto border-[1px] gap-2 p-2">
+              <div className="rounded-full border h-[60px] w-[60px] flex justify-center items-center flex-col m-2">
                 {props.img}
               </div>
               <div className="p-2 ">

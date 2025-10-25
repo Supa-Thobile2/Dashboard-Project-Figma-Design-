@@ -5,9 +5,9 @@ import { inboxData } from '../data/Data'
 
 function Inbox() {
   return (
-    <div className='p-4 space-y-2'>
+    <div className='w-[95%] mx-auto p-2 space-y-2'>
         <h3 className='text-md font-bold'>Inbox</h3>
-        <div className='flex items-center justify-between gap-2'>
+        <div className=' flex items-center justify-between gap-2'>
             <div className='flex items-center justify-between gap-2'>
                 <p>All</p>
                 <p>Unread</p>
@@ -18,7 +18,7 @@ function Inbox() {
             </div>
         </div>
         
-        <div className='border-4 rounded-sm p-2'>
+        <div className='w-full rounded-sm '>
         {inboxData.map((item, index)=>{
 
         return  <MessageCard
@@ -35,6 +35,20 @@ function Inbox() {
         
         
         
+        </div>
+        <div className='flex items-center justify-between'>
+          <div>
+            <p>Show 1 of 10 Data</p>
+          </div>
+          <div className='flex items-center justify-center'>
+            <div>icon</div>
+             <div className='flex justify-center items-center'>
+              <p>1</p>
+              <p>...</p>
+              <p>10</p>
+             </div>
+              <div>icon</div>
+          </div>
         </div>
 
     </div>

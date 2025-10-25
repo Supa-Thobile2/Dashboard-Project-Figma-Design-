@@ -9,7 +9,7 @@ function KanbanAdd() {
         <div className='bg-white border-[1px] rounded-[12px] p-2'>
             <div className='flex items-center justify-between '>
                 <div className='p-[.2rem]'>
-                    <h3 className='text-[1.2rem] font'>Space > Hiphonic</h3>
+                    <h3 className='text-[1.2rem] font'>Space  Hiphonic</h3>
                 </div>
                 <div className='flex items-center justify-between gap-2 p-[.2rem]'>
                     <div className='text-[.7rem]'><FaEllipsis/></div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { MobileHeader } from '../components';
 import { FaEnvelope, FaEnvelopeSquare, FaEyeSlash, FaFacebook, FaGoogle, FaGooglePlusG, FaLock, FaRegEnvelope, FaRegEyeSlash, FaRegUser, FaUser, FaUserLock } from 'react-icons/fa';
@@ -7,6 +7,36 @@ import { FaBoltLightning, FaBridgeLock, FaShopLock } from 'react-icons/fa6';
 
 
 function SignUp() {
+  const [userName, setUserName] = useState('')
+  const [email, setEmail] = useState('')
+  const [password, setPassWord] = useState('')
+
+ const handleUserName = (e) =>{
+    e.preventDefault();
+    setUserName(e.target.value)
+    console.log(userName)
+    
+  }
+
+  
+ const handleEmail = (e) =>{
+    e.preventDefault();
+    setEmail(e.target.value)
+    console.log(email)
+  }
+
+  
+  const handlePassword = (e) =>{
+    e.preventDefault();
+    setPassWord(e.target.value)
+    console.log(password)
+  }
+
+ const  handleSubmit =(e)=>{
+     e.preventDefault();
+
+    console.log('button clicked')
+  }
        return (
        
         
@@ -53,13 +83,13 @@ function SignUp() {
                 <div className="flex items-center justify-centre border-[2px] border-[#E2E8F0] py-[12px] px-[12px] gap-2  rounded-[12px] text-left w-[100%] mx-auto">
                    {/* img */}
                    <FaRegUser className='font-[24px] outline-none'/>
-                   <input type="email" placeholder="Email" className='text-[14px] text-regular text-[ #94A3B8] outline-none w-full' />
+                   <input type="email" placeholder="Email" onChange={handleUserName} className='text-[14px] text-regular text-[ #94A3B8] outline-none w-full' />
                  </div>
                
                   <div className="flex items-center justify-centre border-[2px] border-[#E2E8F0] py-[12px] px-[12px] gap-2  rounded-[12px] text-left w-[100%] mx-auto">
                    {/* img */}
                    <FaRegEnvelope className='font-[24px]'/>
-                   <input type="email" placeholder="Email" className='text-[14px] text-regular text-[ #94A3B8] outline-none w-full' />
+                   <input type="email" placeholder="Email" onChange={handleEmail}  className='text-[14px] text-regular text-[ #94A3B8] outline-none w-full' />
                  </div>
    
                  
@@ -67,7 +97,7 @@ function SignUp() {
                  <div className="flex items-center justify-center border-[2px] border-[#E2E8F0] py-[12px] px-[12px] gap-2 rounded-[12px] text-left w-[100%] mx-auto">
                    {/* img */}
                    <FaLock    className='font-[24px]'/>
-                   <input type="password" placeholder="Password" className='text-[14px] outline-none w-full '/>
+                   <input type="password" placeholder="Password" onChange={handlePassword} className='text-[14px] outline-none w-full '/>
                    {/* img */}
                    <FaRegEyeSlash   className='font-[44px]'/>
                  </div>
@@ -82,7 +112,7 @@ function SignUp() {
                    <p className='text-[.9rem] md:text-[1.2rem] font-regular text-[#64748B] '>By creating an account you agree to our <span className='font-semibold font-600  md:text-[.8rem]'><strong>Terms & Conditions</strong></span> and our <span className='font-semibold font-600 '><strong>Privacy Policy</strong></span></p>
                  </div>
    
-                 <button className="block w-[100%] mx-auto bg-blue-600 rounded-[12px] p-[10px] font-bold text-[16px] text-[#ffffff]">
+                 <button onClick={handleSubmit} className="block w-[100%] mx-auto bg-blue-600 rounded-[12px] p-[10px] font-bold text-[16px] text-[#ffffff]">
                    Sign In
                  </button>
                  <span className="block text-center font-regular text-[14x] text-[#64748B] py-2">Or Sign Up with</span>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { AnalyticsCard, MobileHeader, SalesCard} from "../components";
 import { analyticsData, bestSellData, overViewData, productsData, transactionHistoryData } from "../data/Data";
 import BestCard from "../components/BestCard";
@@ -18,12 +18,22 @@ import OverView from "./OverView";
 
 
 function Dashboard() {
+  
+const [isVisible, setIsVisible] = useState(false)
+
+const handleVisibility = ()=>{
+  return setIsVisible(!isVisible)
+}
+
+
   return (
-    <div className="min-h-[100vh] flex bg-primary-600">
+    <div className="  min-h-[100vh] flex bg-primary-600">
     {/* Sidebar section */}
-    <div className="  md:w-1/6 min-h-[100vh] xl:w-1/6 ">
-      <SideBar/>
-    </div>
+    {isVisible ?  <div className="  md:w-1/6 min-h-[100vh] xl:w-1/6 ">
+     <SideBar/> 
+      
+    </div> :''}
+   
     {/* Right section of Main */}
     <div className='w-[100%]  mx-auto md:w-5/6  min-h-[100vh] '>
     {/* navbar section */}
@@ -35,6 +45,7 @@ function Dashboard() {
         <div>
           <h3 className='text-[1rem] font-bold '>Overview</h3>
           <p className="text-[.6rem] font-regular">Detailed Information about your store</p>
+          {/* <button onClick={handleVisibility}></button> */}
         </div>
         <div className='hidden md:flex items-center justify-between gap-4 space-x-2'>
           <div className="border flex items-center  p-[8px] rounded-[0.9rem]">
@@ -55,13 +66,15 @@ function Dashboard() {
           </div>
         </div>
         <div className="md:hidden">
-          <FaBars/>
+          <FaBars onClick={handleVisibility}/>
         </div>
         </div>
 
       </div>
- 
- <RecentProjects/> 
+      <div className="w-[90%] p-4 border-6 mx-auto"> 
+             <RecentProjects/> 
+      </div>
+
 
 
     

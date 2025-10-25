@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
-import { Inbox, Login, Dashboard, ResetPassword, SignUp, VerifyEmail, MainMail, MailPlatform, Chat, NewMessage, JobSearchMain, Kanban, List, Analytics, MainChat, OverView, SearchFilter, JobSearch, MainJobSearch, JobList} from './pages'
+import { Inbox, Login, Dashboard, ResetPassword, SignUp, VerifyEmail, MainMail, MailPlatform, Chat, NewMessage, JobSearchMain, Kanban, List, Analytics, MainChat, OverView, SearchFilter, JobSearch, MainJobSearch, JobList, MailList, DirectMessage, AddNewProduct, Shipping} from './pages'
 import MainOverView from './pages/MainOverView'
+import ProductPrice from './pages/ProductPrice'
 
 
 
@@ -35,11 +36,20 @@ function App() {
     <Route path='/message' element={<NewMessage/>}/>
     <Route path='/chat' element={<MainChat/>}/>
 
+    <Route path='/filter' element={<SearchFilter/>}/>
+    <Route path='/pop' element={<MailList/>}/>
+    <Route path='/direct' element={<DirectMessage/>}/>
+     <Route path='/add' element={<AddNewProduct/>}/>
+       <Route path='/price' element={<ProductPrice/>}/>
+         <Route path='/shipping' element={<Shipping/>}/>
+
+
 
     {/* job section */}
     <Route path='/job' element={<JobSearchMain/>}/>
     <Route path='/overview' element={<MainOverView/>}/>
-       <Route path='/search' element={<MainJobSearch/>}/><Route path='/joblist' element={<JobList/>}/>
+       <Route path='/search' element={<MainJobSearch/>}/>
+       <Route path='/joblist' element={<JobList/>}/>
 
    
  

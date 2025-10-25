@@ -31,6 +31,13 @@ export { default as MainJobSearch } from './MainJobSearch'
 export { default as JobSearch } from './JobSearch'
 
 
+export { default as MailList } from './MailList'
+export { default as DirectMessage } from './DirectMessage'
+export { default as AddNewProduct } from './AddNewProduct'
+export { default as ProductPricing } from './ProductPrice'
+export { default as Shipping } from './Shipping'
+
+
 
 
 

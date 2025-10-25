@@ -2,7 +2,7 @@ import React from 'react'
 
 function JobListCard(props) {
   return (
-    <div className='w-[100%] md:w-[656px] md:h-[192px] mx-auto space-y-2 p-4 border-[1px] rounded-[.8rem] bg-white'>
+    <div className='w-[100%]  mx-auto space-y-2 p-4 border-[1px] rounded-[.8rem] bg-white'>
         <h5 className='text-[18px] font-bold font-700 text-[#0F172A]'>{props.title}</h5>
         <p className='text-[14px] text-[#94A3B8] font-regular font-400'>{props.subTitle}</p>
         <div className='flex  space-y-2 flex-col'>

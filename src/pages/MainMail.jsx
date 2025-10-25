@@ -14,10 +14,10 @@ import { mailLinksData, directMessageData } from '../data/Data'
 
 function MainMail() {
  return (
-     <div className="min-h-[100vh] flex">
+     <div className="min-h-[100vh] flex fixed w-full">
      {/* Sidebar section */}
-     <div className=" hidden md:flex items-center flex-col  md:w-1/6 min-h-[100vh] xl:w-1/6 ">
-      <div className=' p-1 md:p-2 w-full bg-[white] '>
+     <div className=" hidden border-2 md:flex items-center flex-col  md:w-1/6 min-h-[100vh] xl:w-1/6 ">
+      <div className=' p-4  w-full bg-[white] '>
       <div className='flex items-center gap-2'>
 
            <div className='bg-blue-600 p-1  rounded'>
@@ -29,7 +29,7 @@ function MainMail() {
       </div>
      
     </div>
-    <div className=' space-y-2 space-x-2  '>
+    <div className=' my-10  '>
             <ul className='space-y-4'>
 
                 {mailLinksData.map((item, index)=>{
@@ -37,13 +37,14 @@ function MainMail() {
                 })}
                 
             </ul>
-            <div className='flex items-center justify-between space-y-4 gap-2'>
+           
+            <div className='space-y-4 my-10'>
+               <div className='flex items-center justify-between space-y-4 gap-2'>
               <div className=''>
                 <h3 className='text-md font-md '>Direct Message</h3>
               </div>
               <div className='bg-blue-600 rounded px-2 py-1 text-white text-sm font-bold'>+</div>
             </div>
-            <div className='space-y-2'>
               {directMessageData.map((item, index)=>{
                 return <div key={index} className='flex items-center space-y-2 justify-centre gap-2 '>
                   <div className='w-5 h-5 border rounded-full flex items-center text-sm justify-center'>
@@ -63,21 +64,32 @@ function MainMail() {
        
      </div>
      {/* Right section of Main */}
-     <div className='w-[100%] px-8  mx-auto md:w-5/6 min-h-[100vh]   '>
+     <div className='w-[100%] border-4  mx-auto md:w-5/6 min-h-[100vh]   '>
      {/* navbar section */}
-       <div className="sticky inset-0 top-0 w-full mx-auto z-500 ">
+       <div className="p-4 sticky inset-0 top-0 w-full mx-auto z-500 ">
         <div className='flex items-center justify-between'>
  
         
         
-         <div>
-           <h3 className='text-[1.6rem] font-bold '>Overview</h3>
-           <p className="text-[.9rem] font-regular">Detailed Information about your store</p>
+         <div className='flex items-center justify-between gap-2'>
+          <div className='flex items-center gap-2'>
+
+           <div className='bg-blue-600 p-1  rounded'>
+          <FaBoltLightning color='white'/>
+        </div>
+        <h4 className='text-[19.2px] font-bold text-[#OF172A]'>Hisponic</h4>
+
+
+      </div>
+           
+           <div className="">
+           <FaBars/>
+         </div>
          </div>
          <div className='hidden md:flex items-center justify-between gap-4 space-x-1'>
-           <div className="border flex items-center  p-[.5rem] rounded-[0.9rem]">
+           <div className="">
              <FaSearch/>
-             <input type="text" name="search" id="search" className="w-full outline-none"/>
+             {/* <input type="text" name="search" id="search" className="w-full outline-none"/> */}
  
            </div>
            <div className='flex items-center justify-between gap-4'>

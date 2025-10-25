@@ -9,8 +9,30 @@ function Login() {
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
 
-  const handleEmail = (event)=> setEmail(event.target.value)
-  const handlePassword = (event)=> setPassword(event.target.value)
+  const handleEmail = (event)=>{
+     setEmail(event.target.value)
+     console.log(email)
+  }
+
+  const handleEmailErrors = () =>{
+    if(email === ""){
+      console.log('you need to enter your ')
+    }else{
+       console.log('your email is correct ')
+    }
+  }
+  const handlePassword = (event)=> {
+    setPassword(event.target.value)
+    console.log(password)
+   
+  }
+  const handlePasswordErrors = () =>{
+    if(password === ""){
+      console.log('you need to enter your ')
+    }else{
+       console.log('your password is correct is correct ')
+    }
+  }
 
   const handleSubmit = (event)=>{
 
@@ -20,6 +42,7 @@ function Login() {
 
     // console.log('Form Data: ', email, password)
     console.log('button pressed')
+ 
   }
     return (
           
@@ -98,7 +121,7 @@ function Login() {
                   
                     
                    <Link to='/main'>
-                    <button  className="block w-[100%] mx-auto bg-blue-600 rounded-[12px] p-[12px] font-bold text-[16px] text-[#ffffff] mb-4" onChange={handleSubmit}>
+                    <button  className="block w-[100%] mx-auto bg-blue-600 rounded-[12px] p-[12px] font-bold text-[16px] text-[#ffffff] mb-4" >
                       Sign In
                     </button>
                     </Link>

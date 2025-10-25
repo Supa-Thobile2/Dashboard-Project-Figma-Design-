@@ -8,13 +8,13 @@ import Message from "./Message";
 
 function RecentProjects() {
   return (
-    <div className=" min-h-full flex  flex-col  bg-[#F8FAFC]">
+    <div className="min-w-full min-h-full flex  flex-col  bg-[#F8FAFC]">
 
  
       
   
         {/* recent section leading section */}
-        <div className=" border-[1px] rounded-xl  mx-auto  bg-white">
+        <div className="w-full border-[1px] rounded-xl  mx-auto  bg-white">
         {/* leading head section */}
           <div className="flex  items-center  mx-auto mb-8">
             <h5 className="text-md font-bold  ">Recent Project</h5>
@@ -22,14 +22,14 @@ function RecentProjects() {
           </div>
 
           {/* recent section cards */}
-          <div className="block md:flex items-center justify-between md:w-[668px] md:h-[192px] mx-auto">
+          <div className="block md:flex items-center justify-between  mx-auto">
 
 
 
           {recentProjectsData.map((item, index)=>{
 console.log(item)
 
-                   return <div key={index} className="p-2 mx-auto md:w-[205px] md:h-[148px] bg-[#F8FAFC]  border-[1px] rounded-xl bg-gray">
+                   return <div key={index} className="w-full p-2 mx-auto  bg-[#F8FAFC]  border-[1px] rounded-xl bg-gray">
             <h4 className="text-[16px] font-bold ">{item.title}</h4>
             <div className="flex justify-between items-center ">
               <p  className="text-[12px] font-regular font-400 text-[ #64748B]
@@ -112,10 +112,10 @@ console.log(item)
           </div>
         </div> */}
 
-<div className='block md:flex md:w-[698px] h-[192px]'>
+<div className='block md:flex '>
 
 
-        <div className="md:w-[332px] md:h-[340px] mx-auto  border mx-auto rounded-xl">
+        <div className="w-full border mx-auto rounded-xl">
           <div className="flex justify-center items-center">
             <div>November 21</div>
             <div>Arrows</div>
@@ -125,7 +125,7 @@ console.log(item)
 
 
         {/* Message section */}
-        <div className="md:w-[334px] md:h-[340px] mx-auto m border  mx-auto rounded-xl">
+        <div className="w-full mx-auto m border  mx-auto rounded-xl">
           <h5 className="text-[16px]  font-bold">Message</h5>
           <div className="py-2 text-center mx-auto">
             <Message/>
@@ -160,7 +160,7 @@ console.log(item)
 
  {/* task section */}
         
-        <div className="md:w-[668px] mt-4 border mx-auto rounded-xl">
+        <div className="w-full mt-4 border mx-auto rounded-xl">
           {/* sectionhead */}
           <div className="flex justify-between items-center">
             <div>

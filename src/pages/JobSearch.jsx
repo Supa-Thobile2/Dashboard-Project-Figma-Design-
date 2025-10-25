@@ -29,7 +29,7 @@ function JobSearch() {
          <button className='p-[8px] rounded-[12px] bg-[#2563EB] w-full'>Search</button>
          </div>
          <p className='text-[14px] font-regular font-400 '>Showing: <span className='font-bold text-[14px] font-700 '>60 filtered jobs</span></p>
-         <div className='p-8 bg-white space-y-1 rounded-[12px]'>
+         <div className='w-[80%] mx-auto p-8 bg-white space-y-4 space-x-4  rounded-[12px] grid md:grid-cols-2'>
             
              {jobSearchData.map((item, index)=>{
                  return <SearchCard

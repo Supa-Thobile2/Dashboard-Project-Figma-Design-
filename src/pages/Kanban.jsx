@@ -10,9 +10,9 @@ import { FaRegShareSquare, FaSearch } from "react-icons/fa";
 
 function Kanban() {
   return (
-    <div className='p-4'>
-       <div className="sticky inset-0 top-0 w-full mx-auto z-500 bg-white">
-             <div className='flex items-center justify-between p-2'>
+    <div className='bg-[#F1F5F9]'>
+       <div className="sticky inset-0 top-0 w-full mx-auto z-500 bg-white p-2 md:p-8">
+             <div className='flex items-center justify-between '>
       
              
              
@@ -44,7 +44,7 @@ function Kanban() {
               </div>
       
             </div>
-            <div className="w-[90%] border mx-auto p-4 md:p-2  space-y-4 md:space-y-1">
+            <div className="w-[90%] border mx-auto p-4 md:p-2  ">
                      {/* filter section */}
                     <div className="w-[100%] border mx-auto rounded  p-2 my-2 rounded-2xl  ">
             
@@ -89,10 +89,10 @@ function Kanban() {
                     </div>
                   </div>
       
-      <div className="md:flex  justify-between p-4">
-        <div className="p-2">
+      <div className=" w-[90%] border-1 p-2 space-y-4 mx-auto md:flex gap-2  ">
+        <div className="w-full mx-auto">
          
-          <div className="block w-full border-1 p-2 md:p-0 space-y-4 md:space-y-0 md:flex flex-col gap-2">
+          <div className="block w-full border-1  md:flex flex-col ">
 
             {toDoData.map((item, index)=>{
                 return <KanbanOtherCard
@@ -109,9 +109,9 @@ function Kanban() {
           </div>
         </div>
         {/* section */}
-        <div className="md:lex items-center justify-center gap-2">
+        <div className="w-full mx-auto md:flex ">
        
-          <div className="block border-1 md:flex-items-center justify-center gap-2 gap-2">
+          <div className="block w-[100%] mx-auto border-1 md:flex flex-col">
 
             {inProgress.map((item, index)=>{
                 return <KanbanCard
@@ -131,9 +131,9 @@ function Kanban() {
 
 
 {/* Automated goals */}
-         <div className="">
+         <div className=" border-1 w-[100%] mx-auto">
         
-          <div className="block border-1 space-y-4 md:space-y-0 p-2 md:flex-items-center justify-center gap-2">
+          <div className="block border-1 w-full  md:flex-items-center justify-center ">
 
             {inReviewData.map((item, index)=>{
                 return <KanbanCard
@@ -153,9 +153,9 @@ function Kanban() {
         </div>
 
 {/* Done section */}
-        <div className="">
+        <div className="border-1 w-full mx-auto">
         
-          <div className='block border-1 md:flex-items-center justify-center gap-2'>
+          <div className='block border-1 md:flex-items-center justify-center'>
 
             {doneData.map((item, index)=>{
               return <KanbanCard

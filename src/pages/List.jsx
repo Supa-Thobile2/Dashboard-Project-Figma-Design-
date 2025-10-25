@@ -7,7 +7,7 @@ import { MobileHeader } from "../components";
 
 function List() {
   return (
-    <div className="w-[100%] space-y-2 md:space-y-1 ">
+    <div className="w-[100%] space-y-4 ">
           <div className="sticky inset-0 top-0 w-full mx-auto z-500 bg-white">
                    <div className='flex items-center justify-between p-2'>
             
@@ -42,7 +42,7 @@ function List() {
             
                   </div>
     
-      <div className="w-[90%] border mx-auto p-4 md:p-2  space-y-4 md:space-y-1">
+      <div className="w-[90%] space-y-4 border mx-auto p-4 md:p-2 ">
          {/* filter section */}
         <div className="w-[100%] border mx-auto rounded  p-2 my-2 rounded-2xl  ">
 
@@ -86,10 +86,10 @@ function List() {
           <button className="border-1 px-6 rounded-[12px] py-2">Gant</button>
         </div>
       </div>
-      <div className='w-[90%] space-y-4 border mx-auto p-4 md:flex justify-center items-center flex-col gap-4'>
+      <div className='w-[90%] border mx-auto p-4 md:flex justify-center items-center flex-col my-2'>
       
                   {toDoData.map((item, index)=>{
-                      return  <div className="w-full  md:w-[449px] h-[107px] border-1 md:flex items-center justify-between   rounded-[12px] p-2">
+                      return  <div className="w-full my-2 p-4 border-[1px] md:flex items-center justify-between   rounded-[12px] p-2">
              <div>
               <h4 className="text-[16px] font-semibold font-600">{item.heading}</h4>
               <p className="text-[12px] font-medium font-500 text-[#2563EB] ">{item.subTitle}</p>

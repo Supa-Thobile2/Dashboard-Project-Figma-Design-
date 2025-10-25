@@ -2,13 +2,13 @@ import React from 'react'
 
 function KanbanCard(props) {
   return (
-    <div className=" mx-auto  w-full md:w-[283px] md:h-[201px]  p border-[.7rem] border-[#F1F5F9] bg-[#fff] rounded-[1.2rem]">
+    <div className=" mx-auto  w-full p-2 border-[.7rem] border-[#F1F5F9] bg-[#fff] rounded-[1.2rem]">
       {props.img ?  <div className='border p-4 md:p-2  rounded-xl'>
                 {props.img}
 
              </div>: null}
           
-              <div className='p-2 space-y-4 md:space-y-0'>
+              <div className='p-2 space-y-1 '>
               <h4 className="text-[16px] font-semibold font-600 text-[#0F172A] font-bold px-2">{props.heading}</h4>
               <p className="text-[12px] font-medium tex-[#2563EB] px-2 ">{props.subText}</p>
               <p className="border-b-1 px-2  text-[12px] font-regular font-400 text-[#64748B]">
